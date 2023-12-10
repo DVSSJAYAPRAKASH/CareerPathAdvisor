@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Learning Model Prediction - Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2; /* Light gray background color */
+        }
+        .result-container {
+            text-align: center;
+            background-color: #ffffff; /* White background color for the result container */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for the result container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+            animation: fadeIn 1s ease-in-out forwards; /* Animation for fade-in effect */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            color: #333; /* Dark gray text color */
+        }
+        p {
+            color: #555; /* Medium gray text color */
+        }
+        strong {
+            color: #4CAF50; /* Green color for the predicted career path */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result:</h1>
+        <p>The predicted career path is: <strong>{{ prediction }}</strong></p>
+    </div>
+</body>
+</html>
